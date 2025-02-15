@@ -2,10 +2,12 @@
 
 namespace App\Controllers;
 
+use CodeIgniter\HTTP\RedirectResponse;
+
 class Home extends BaseController
 {
     public function index(): string
     {
-        return view('welcome_message');
+        return view('Home/index');
     }
 }

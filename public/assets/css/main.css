@@ -1,0 +1,91 @@
+body {
+  max-width: 1200px !important; /* Override water.css */
+}
+
+a.plain {
+  text-decoration: none !important;
+}
+
+a.link-button {
+  color: navy;
+}
+
+button.rowButton {
+  border: none;
+  background: none !important;
+  padding: 0;
+
+  &:focus {
+    outline: none;
+    border: none;
+  }
+}
+
+div.formButtons {
+  text-align: right;
+}
+
+div.fieldSetGroup {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+
+  > fieldset {
+    flex: 1;
+  }
+}
+
+div.oldValue {
+  padding: 12px 0 36px;
+  color: dimgray;
+}
+
+div.asButton {
+  border: 1px solid lightgrey;
+  border-radius: 8px;
+  background-color: lightgrey;
+  padding: 8px;
+  width: 75px;
+  cursor: pointer;
+}
+
+div.top-actions {
+  padding: 16px 0;
+}
+
+table.plain {
+  width: 400px;
+
+  td:first-child {
+    font-weight: 500;
+  }
+
+  td:last-child {
+    text-align: right;
+  }
+
+  tr {
+    background: none !important;
+  }
+}
+
+ul.error {
+  li {
+    color: red;
+  }
+}
+
+p.success {
+  color: green;
+}
+
+p.error {
+  color: red;
+}
+
+div.reason {
+  border: 1px solid;
+  border-radius: 8px;
+  padding: 8px;
+  min-height: 150px;
+}
