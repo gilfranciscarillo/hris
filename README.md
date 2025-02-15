@@ -42,19 +42,19 @@ Session expiration is 0 seconds so if we close the browser, session expires
    a. If you will be using gmail, base on experience, you will need to generate an app password cause you can't use your gmail password directly
 4. You can change the email secret key of your choice
 
-CI_ENVIRONMENT = development
-app.baseURL = 'http://localhost:8080'
-database.default.hostname = localhost
-database.default.database = hris
-database.default.username = root
-database.default.password = 
-database.default.port = 3306
-encryption.key = afUZk3awWBI03h9EmjZUa2DKUKv2N6UAmlWfhfXsh3Q=
-email.SMTPHost = smtp.gmail.com
-email.SMTPUser = 
-email.SMTPPass = 
-email.SMTPPort = 587
-EMAIL_SECRET_KEY = "hr1s3m@1l";
+CI_ENVIRONMENT = development<br />
+app.baseURL = 'http://localhost:8080'<br />
+database.default.hostname = localhost<br />
+database.default.database = hris<br />
+database.default.username = root<br />
+database.default.password = <br />
+database.default.port = 3306<br />
+encryption.key = afUZk3awWBI03h9EmjZUa2DKUKv2N6UAmlWfhfXsh3Q=<br />
+email.SMTPHost = smtp.gmail.com<br />
+email.SMTPUser =<br /> 
+email.SMTPPass =<br />
+email.SMTPPort = 587<br />
+EMAIL_SECRET_KEY = "hr1s3m@1l";<br />
 
 # Other notes
 1. The data integrity for updating employee/user record for bank details can be done through trigger but in my opinion, in real world, it's harder to debug triggers and mysql will not be able to inform us if the trigger fails so decided to do the logic in the code.
@@ -66,9 +66,9 @@ EMAIL_SECRET_KEY = "hr1s3m@1l";
 3. Open terminal then cd to the project root then Run composer install
 4. Make sure that your mysql connection is running correctly before running number 5.
 5. There is a CREATE_DATABASE.sql file in the project root, run it's content to your mysql
-6. Then while your terminal points to your project root, run below in order
-   a. php spark migrate
-   b. php spark db:seed RunAllSeed
+6. Then while your terminal points to your project root, run below in order<br />
+   a. php spark migrate<br />
+   b. php spark db:seed RunAllSeed<br />
    c. php spark serve - To run the app.
 
 # Features
@@ -86,8 +86,8 @@ EMAIL_SECRET_KEY = "hr1s3m@1l";
 12. Email message with clean format using html and link to display the details of the response
 13. Login filter and page access check
 14. Basic navigation
-15. Common user authentication and authorization features
-    a. Login
-    b. Login magic link - Will send an email for a login link. Email should exists in the db.
-    c. Remember me
+15. Common user authentication and authorization features<br />
+    a. Login<br />
+    b. Login magic link - Will send an email for a login link. Email should exists in the db.<br />
+    c. Remember me<br />
     d. Register
