@@ -62,7 +62,7 @@ EMAIL_SECRET_KEY = "hr1s3m@1l";<br />
 
 # Setup instruction
 1. Clone project
-2. Create .env file and setup
+2. Create .env file and place in the project root and set it up
 3. Open terminal then cd to the project root then Run composer install
 4. Make sure that your mysql connection is running correctly before running number 5.
 5. There is a CREATE_DATABASE.sql file in the project root, run it's content to your mysql
