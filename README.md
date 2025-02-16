@@ -18,9 +18,9 @@ Session expiration is 0 seconds so if we close the browser, session expires
 # Security measures
 1. CI4 shield library package - Authentication and Authorization
 2. Using csrf token in forms - Configuration can be found in /app/Config/Security.php
-3. Sanitizing inputs and displays by using CI4 esc function to prevent xss attacks
-   a. Converts special characters into html entities
-   b. Prevents malicious scripts from executing
+3. Sanitizing inputs and displays by using CI4 esc function to prevent xss attacks<br />
+   a. Converts special characters into html entities<br />
+   b. Prevents malicious scripts from executing<br />
 4. Uses entity based access on tables to prevent sql injection. CI4 automatically uses prepared statements.
 5. Input validation
 6. Sensitive data encryption like bank account number as well as formatted display
@@ -41,6 +41,7 @@ Session expiration is 0 seconds so if we close the browser, session expires
 3. Supply the username and password of the smtp that you will be using
    a. If you will be using gmail, base on experience, you will need to generate an app password cause you can't use your gmail password directly
 4. You can change the email secret key of your choice
+5. Smtp password needs to be in string format like app.baseURL
 
 CI_ENVIRONMENT = development<br />
 app.baseURL = 'http://localhost:8080'<br />
